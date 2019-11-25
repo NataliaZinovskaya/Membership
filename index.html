@@ -18,14 +18,31 @@
     <!-- header -->
     <header class="header">
         <img src="build/img/logo.png" alt="logo" class="header__logo">
+
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-list-link"> <a href="#">About</a> </li>
-                <li class="header__nav-list-link"> <a href="#">Services</a> </li>
-                <li class="header__nav-list-link"> <a href="#">Blog</a> </li>
-                <li class="header__nav-list-link"> <a href="#">Contact</a> </li>
+                <li class="header__nav-list-content">
+                    <a class="header__nav-list-content-link" href="#">About <i
+                            class="fas fa-angle-down wow fadeInDown"></i></a>
+                    <ul class="header__nav-list-dropdown">
+                        <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
+                        <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
+                        <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
+                        <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-list-content">
+                    <a class="header__nav-list-content-link" href="#">Services</a>
+                </li>
+                <li class="header__nav-list-content">
+                    <a class="header__nav-list-content-link" href="#">Blog</a>
+                </li>
+                <li class="header__nav-list-content">
+                    <a class="header__nav-list-content-link" href="#">Contact</a>
+                </li>
             </ul>
         </nav>
+
         <a href="#" class="header__buy-button">buy now</a>
         <div class="header-content">
             <h1 class="header-content__title">We Design Experiences.</h1>
@@ -34,14 +51,10 @@
     </header>
     <!-- /header -->
 
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="build/js/script.js"></script>
     <script src="build/js/wow.js"></script>
+    <script src="https://kit.fontawesome.com/20cc153e5b.js" crossorigin="anonymous"></script>
     <script>
         new WOW().init();
     </script>

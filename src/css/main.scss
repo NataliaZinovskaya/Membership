@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
 
-@import "_variables.scss";
+@import "variables.scss";
 
 // ==== header ====
 
@@ -38,43 +38,62 @@
             color: #fff;
         }
     }
+}
 
-    &__nav {
-        padding-top: 40px;
-        padding-right: 215px;
+.header__nav {
+    padding-top: 60px;
+    padding-right: 215px;
+    min-height: 200px;
 
-        &-list {
-            display: flex;
-            height: 67px;
-            justify-content: flex-end;
-            align-items: center;
+    &-list {
+        display: flex;
+        justify-content: flex-end;
+
+        &-content {
+            margin: 0 25px;
+            @include text(Ubuntu, 16px, #333333, none, 500);
 
             &-link {
-                margin: 0 25px;
-                @include text(Ubuntu, 16px, #333333, none, 500);
+                color: #333333;
+                transition: .5s;
 
-                a {
-                    color: #333333;
-                    transition: .5s;
-
-                    &:hover {
-                        border-bottom: 3px solid #cda63d;
-                        padding-bottom: 5px;
-                    }
+                &:hover {
+                    color: #cda63d;
                 }
+
             }
         }
     }
 }
 
+.header__nav-list-dropdown {
+    display: none;
+
+    &-link {
+        text-align: center;
+        padding: 5px 0;
+
+        a {
+            color: #333;
+            transition: .5s;
+
+            &:hover {
+                color: #cda63d;
+            }
+        }
+    }
+}
+
+.fa-angle-down {
+    color: #c99f2b;
+    padding-left: 5px;
+}
+
 .header-content {
     padding-left: 165px;
-    min-height: 530px;
+    min-height: 205px;
     max-width: 470px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, column, center, center);
 
     &__title {
         @include text(Ubuntu, 44px, #333333, none, 300);
