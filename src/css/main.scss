@@ -70,8 +70,8 @@
     display: none;
 
     &-link {
-        text-align: center;
-        padding: 5px 0;
+        text-align: left;
+        padding: 9px 0 1px;
 
         a {
             color: #333;
@@ -115,5 +115,201 @@
     }
 }
 
+// ==== popup
+#modal {
+
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgba(#cfcbcb, .3);
+
+    input {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 40px;
+        outline: none;
+        padding: 0 10px;
+        @include text(Ubuntu, 13px, #000, none, 400);
+        border: none;
+        background-color: #e0dcd7;
+    }
+
+    input[type="submit"] {
+        background-color: #df942a;
+        cursor: pointer;
+        border: none;
+        @include text(Ubuntu, 13px, #fff, none, 700);
+        border-radius: 5px;
+        text-transform: uppercase;
+
+        &:focus {
+            visibility: hidden;
+        }
+    }
+}
+
 
 // ==== /header ====
+
+// ==== offers ====
+
+.offers {
+    max-width: 910px;
+    margin: 65px auto 100px;
+
+    &__title {
+        @include text(Ubuntu, 25px, #141311, none, 400);
+        text-align: center;
+        letter-spacing: .5px;
+        padding-bottom: 23px;
+    }
+
+    &__text {
+        @include text(Ubuntu, 13px, #141311, 17.5px, 400);
+        text-align: center;
+        padding-bottom: 32px;
+    }
+}
+
+.offers-content-wrapper {
+    max-width: 910px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers-content-box {
+    max-width: 285px;
+    overflow: hidden;
+
+    &__image {
+        display: block;
+        max-width: 285px;
+        min-height: 200px;
+        transition: .5s;
+
+        &:hover {
+            transform: scale(1.09) translateY(-10px);
+        }
+    }
+
+    &__title {
+        @include text(Ubuntu, 17px, #141311, none, 400);
+        padding: 27px 0 15px 25px;
+    }
+
+    &__text {
+        @include text(Nunito, 12px, #141311, 1.2em, 300);
+        padding: 0 25px;
+    }
+}
+
+// ==== /offers ====
+
+// ==== about ====
+
+.about {
+    width: 100%;
+}
+
+.adout-top-block {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    justify-content: center;
+
+    &__description {
+        background-color: #f8f8f8;
+        width: 33.5%;
+    }
+
+    &__image {
+        background-image: url(../img/about1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 33.5%;
+    }
+}
+
+
+
+.about-bottom-block {
+    width: 100%;
+    display: flex;
+
+    &-left {
+        width: 67%;
+
+        &-top {
+            width: 100%;
+            min-height: 300px;
+            background-color: #fff;
+            display: flex;
+
+            &__image {
+                background-image: url(../img/about2.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 50%;
+            }
+
+            &__description {
+                width: 50%;
+                height: 300px;
+            }
+        }
+
+        &-awards {
+            width: 100%;
+            background-color: #f4f0eb;
+            min-height: 300px;
+            display: flex;
+
+            &__description {
+                width: 50%;
+            }
+
+            &__image {
+                background-image: url(../img/award.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 50%;
+            }
+        }
+    }
+
+    &-right {
+        width: 33%;
+        min-height: 600px;
+        background-image: url(../img/about3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &__title {
+            @include text(Ubuntu, 30px, #fff, none, 400);
+            padding: 400px 0 40px 130px;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: #fff;
+                height: 3px;
+                width: 35px;
+                bottom: 20px;
+            }
+        }
+
+        &__text {
+            @include text(Nunito, 14px, #fff, 1.2em, 300);
+            padding-left: 130px;
+            width: 58%;
+        }
+    }
+}
+
+
+// ==== /about ====

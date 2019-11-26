@@ -17,3 +17,23 @@
 a {
     text-decoration: none;
 }
+
+.about-description__title {
+    @include text(Ubuntu, 30px, #141311, none, 400);
+    padding: 110px 0 30px 90px;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        background-color: #000;
+        height: 3px;
+        width: 35px;
+        bottom: 20px;
+    }
+}
+
+.about-description__text {
+    @include text(Nunito, 14px, #141311, 1.2em, 300);
+    padding: 0 100px 0 90px;
+}

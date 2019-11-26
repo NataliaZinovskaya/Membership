@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/style.css">
     <link rel="stylesheet" href="build/css/animate.css">
+    <link rel="stylesheet" href="build/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="build/css/style.css">
 </head>
 
 <body>
@@ -25,8 +26,8 @@
                     <a class="header__nav-list-content-link" href="#">About <i
                             class="fas fa-angle-down wow fadeInDown"></i></a>
                     <ul class="header__nav-list-dropdown">
-                        <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
-                        <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
+                        <li class="header__nav-list-dropdown-link"><a href="#offers">Offers</a></li>
+                        <li class="header__nav-list-dropdown-link"><a href="#about">About Us</a></li>
                         <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
                         <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
                     </ul>
@@ -43,18 +44,107 @@
             </ul>
         </nav>
 
-        <a href="#" class="header__buy-button">buy now</a>
+        <a data-fancybox data-src="#modal" href="javascript:;" href="#" class="header__buy-button">buy now</a>
         <div class="header-content">
             <h1 class="header-content__title">We Design Experiences.</h1>
-            <a href="#" class="header-content__start-button">start now</a>
+            <a data-fancybox data-src="#modal" href="javascript:;" href="#" class="header-content__start-button">start
+                now</a>
         </div>
     </header>
+    <!-- popup -->
+    <div style="display: none;" id="modal">
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Login">
+            <input type="email" placeholder="Email">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- /popup -->
     <!-- /header -->
 
+    <!-- offer -->
+    <section class="offers" id="offers">
+        <h2 class="offers__title">Perfect for Designers & Developers</h2>
+        <p class="offers__text">We are the unique set-up, that is ready to challenge and knock out such a global problem
+            as unemployment. Our company gladly helps those, who are ready to learn, to develop and to gain new
+            experience. company unifies people all over the world. Everything we do, we do it for YOU - totally
+            gratuitously and with great enjoyment. We work so that you could work!</p>
+        <div class="offers-content-wrapper">
+            <a href="#offers" class="offers-content-box">
+                <img src="build/img/offer1.jpg" alt="image" class="offers-content-box__image">
+                <p class="offers-content-box__title">User experience</p>
+                <p class="offers-content-box__text">Update your online business experience to 2017 standards. Encrease
+                    your earnings.</p>
+            </a>
+            <a href="#offers" class="offers-content-box">
+                <img src="build/img/offer2.jpg" alt="image" class="offers-content-box__image">
+                <p class="offers-content-box__title">Social Media</p>
+                <p class="offers-content-box__text">Add as many language packs as you want, to showcase your website
+                    across the entire globe.</p>
+            </a>
+            <a href="#offers" class="offers-content-box">
+                <img src="build/img/offer3.jpg" alt="image" class="offers-content-box__image">
+                <p class="offers-content-box__title">Branding</p>
+                <p class="offers-content-box__text">Add as many language packs as you want, to showcase your website
+                    across the entire globe.</p>
+            </a>
+        </div>
+    </section>
+    <!-- /offer -->
+
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="adout-top-block">
+            <a href="#about" class="adout-top-block__description wow fadeInLeft">
+                <p class="about-description__title">History</p>
+                <p class="about-description__text">Add as many language packs as you want, to showcase your website
+                    across the entire globe.</p>
+            </a>
+            <div class="adout-top-block__image wow fadeInDown"></div>
+            <a href="#about" class="adout-top-block__description wow fadeInRight">
+                <p class="about-description__title">Who we are</p>
+                <p class="about-description__text">Add as many language packs as you want, to showcase your website
+                    across the entire globe.</p>
+            </a>
+        </div>
+        <div class="about-bottom-block">
+            <div class="about-bottom-block-left">
+                <div class="about-bottom-block-left-top">
+                    <div class="about-bottom-block-left-top__image wow fadeInLeft"></div>
+                    <a href="#about" class="about-bottom-block-left-top__description wow zoomIn">
+                        <p class="about-description__title">Who we are</p>
+                        <p class="about-description__text">Add as many language packs as you want, to showcase your
+                            website
+                            across the entire globe.</p>
+                    </a>
+                </div>
+                <div class="about-bottom-block-left-awards wow fadeInUp">
+                    <a href="#about" class="about-bottom-block-left-awards__description">
+                        <p class="about-description__title">Awards</p>
+                        <p class="about-description__text">Add as many language packs as you want, to showcase your
+                            website
+                            across the entire globe.</p>
+                    </a>
+                    <div class="about-bottom-block-left-awards__image"></div>
+                </div>
+            </div>
+            <div class="about-bottom-block-right wow fadeInUp">
+                <p class="about-bottom-block-right__title">Goal</p>
+                <p class="about-bottom-block-right__text">Add as many language packs as you want, to showcase your
+                    website across the entire globe.</p>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="build/js/script.js"></script>
+    <script src="build/js/jquery.fancybox.min.js"></script>
     <script src="build/js/wow.js"></script>
     <script src="https://kit.fontawesome.com/20cc153e5b.js" crossorigin="anonymous"></script>
+    <script src="build/js/script.js"></script>
     <script>
         new WOW().init();
     </script>
