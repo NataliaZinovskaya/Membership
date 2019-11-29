@@ -1,13 +1,265 @@
-@media screen and (min-width : 320px) and (max-width : 480px) {}
+@media (max-width: 1400px) {
+    .projects-right-block {
+        margin-left: 40px;
+    }
+}
 
+@media (max-width: 1140px) {
 
+    .header-content {
+        padding-left: 40px;
+    }
 
-@media screen and (min-width : 768px) and (max-width : 1024px) {}
+    .header-content__title {
+        width: 60%;
+    }
 
+    .about-bottom-block-right__title {
+        padding: 370px 0 40px 65px;
+    }
 
+    .about-bottom-block-right__text {
+        padding-left: 65px;
+    }
 
-@media screen and (min-width : 1024px) and (max-width : 1224px) {}
+    .projects {
+        margin-top: 90px;
+        margin-bottom: 100px;
+    }
 
+    .projects-left-block {
+        margin-right: 65px;
+    }
+}
 
+@media (max-width: 1000px) {
+    .about-description__title {
+        padding: 65px 0 30px 38px;
+    }
 
-@media screen and (min-width : 1824px) {}
+    .about-description__text {
+        padding-left: 38px;
+    }
+
+    .projects-right-block-content {
+        width: 100%;
+    }
+
+    .prices-wrapp {
+        min-height: 610px;
+    }
+
+    .prices {
+        padding: 0 30px;
+    }
+
+    .prices__title {
+        padding: 100px 0 70px;
+    }
+
+    .prices-content {
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 920px) {
+    .offers-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offers__text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .offers-content-box__text {
+        padding-bottom: 20px;
+    }
+
+    .offers {
+        margin-bottom: 30px;
+    }
+
+    .news {
+        min-height: 1300px;
+    }
+
+    .news-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-content-left {
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (max-width: 840px) {
+
+    .header-content {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .projects {
+        flex-direction: column;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .projects-left-block {
+        width: 90%;
+    }
+
+    .projects-right-block {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .projects-right-block__title {
+        text-align: center;
+    }
+
+    .projects-right-block__text {
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .prices-content__list {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .header {
+        background-position: left;
+    }
+
+    .about-description__text {
+        padding-right: 55px;
+    }
+
+    .adout-top-block {
+        flex-direction: column;
+    }
+
+    .adout-top-block__image,
+    .adout-top-block__description,
+    .about-bottom-block-left-top__image {
+        min-height: 200px;
+        width: 100%;
+    }
+
+    .about-bottom-block {
+        flex-direction: column;
+    }
+
+    .about-bottom-block-left {
+        width: 100%;
+    }
+
+    .about-bottom-block-left-top {
+        flex-direction: column;
+    }
+
+    .about-bottom-block-left-top__description,
+    .about-bottom-block-left-awards__description {
+        width: 100%;
+        height: 200px;
+    }
+
+    .about-bottom-block-left-awards__image {
+        display: none;
+    }
+
+    .about-bottom-block-right {
+        width: 100%;
+    }
+
+    .prices {
+        flex-direction: column;
+    }
+
+    .prices-content__cost-first {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .prices-content__cost {
+        width: 205px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects {
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+
+    .news-content {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .news {
+        min-height: 1660px;
+    }
+
+    .news-content-right {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .header {
+        min-height: 80vh;
+    }
+
+    .projects-left-block {
+        display: none;
+    }
+
+    .projects-right-block {
+        margin: 30px auto;
+    }
+
+    .news-content-left__title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .header {
+        min-height: 95vh;
+    }
+
+    .header-content__title {
+        font-size: 35px;
+    }
+
+    .header__buy-button {
+        top: 15px;
+        right: 15px;
+    }
+
+    .header__logo {
+        left: 20px;
+        top: 15px;
+    }
+
+    .prices__title {
+        font-size: 30px;
+    }
+}

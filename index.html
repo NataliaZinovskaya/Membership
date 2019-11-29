@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="build/css/animate.css">
     <link rel="stylesheet" href="build/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="build/css/style.css">
@@ -23,31 +24,30 @@
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-list-content">
-                    <a class="header__nav-list-content-link" href="#">About <i
-                            class="fas fa-angle-down wow fadeInDown"></i></a>
+                    <a class="header__nav-list-content-link" href="#">About <i class="fas fa-angle-down"></i></a>
                     <ul class="header__nav-list-dropdown">
                         <li class="header__nav-list-dropdown-link"><a href="#offers">Offers</a></li>
                         <li class="header__nav-list-dropdown-link"><a href="#about">About Us</a></li>
-                        <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
-                        <li class="header__nav-list-dropdown-link"><a href="#">A3</a></li>
+                        <li class="header__nav-list-dropdown-link"><a href="#projects">Projects</a></li>
+                        <li class="header__nav-list-dropdown-link"><a href="#prices">Prices</a></li>
                     </ul>
                 </li>
                 <li class="header__nav-list-content">
-                    <a class="header__nav-list-content-link" href="#">Services</a>
+                    <a class="header__nav-list-content-link" href="#services">Services</a>
                 </li>
                 <li class="header__nav-list-content">
-                    <a class="header__nav-list-content-link" href="#">Blog</a>
+                    <a class="header__nav-list-content-link" href="#blog">Blog</a>
                 </li>
                 <li class="header__nav-list-content">
-                    <a class="header__nav-list-content-link" href="#">Contact</a>
+                    <a class="header__nav-list-content-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
 
-        <a data-fancybox data-src="#modal" href="javascript:;" href="#" class="header__buy-button">buy now</a>
+        <a data-fancybox data-src="#modal" href="javascript:;" class="header__buy-button">buy now</a>
         <div class="header-content">
             <h1 class="header-content__title">We Design Experiences.</h1>
-            <a data-fancybox data-src="#modal" href="javascript:;" href="#" class="header-content__start-button">start
+            <a data-fancybox data-src="#modal" href="javascript:;" class="header-content__start-button">start
                 now</a>
         </div>
     </header>
@@ -97,13 +97,13 @@
     <section class="about" id="about">
         <div class="adout-top-block">
             <a href="#about" class="adout-top-block__description wow fadeInLeft">
-                <p class="about-description__title">History</p>
+                <h2 class="about-description__title">History</h2>
                 <p class="about-description__text">Add as many language packs as you want, to showcase your website
                     across the entire globe.</p>
             </a>
             <div class="adout-top-block__image wow fadeInDown"></div>
             <a href="#about" class="adout-top-block__description wow fadeInRight">
-                <p class="about-description__title">Who we are</p>
+                <h2 class="about-description__title">Who we are</h2>
                 <p class="about-description__text">Add as many language packs as you want, to showcase your website
                     across the entire globe.</p>
             </a>
@@ -113,7 +113,7 @@
                 <div class="about-bottom-block-left-top">
                     <div class="about-bottom-block-left-top__image wow fadeInLeft"></div>
                     <a href="#about" class="about-bottom-block-left-top__description wow zoomIn">
-                        <p class="about-description__title">Who we are</p>
+                        <h2 class="about-description__title">Who we are</h2>
                         <p class="about-description__text">Add as many language packs as you want, to showcase your
                             website
                             across the entire globe.</p>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="about-bottom-block-left-awards wow fadeInUp">
                     <a href="#about" class="about-bottom-block-left-awards__description">
-                        <p class="about-description__title">Awards</p>
+                        <h2 class="about-description__title">Awards</h2>
                         <p class="about-description__text">Add as many language packs as you want, to showcase your
                             website
                             across the entire globe.</p>
@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div class="about-bottom-block-right wow fadeInUp">
-                <p class="about-bottom-block-right__title">Goal</p>
+                <h2 class="about-bottom-block-right__title">Goal</h2>
                 <p class="about-bottom-block-right__text">Add as many language packs as you want, to showcase your
                     website across the entire globe.</p>
             </div>
@@ -138,11 +138,352 @@
     </section>
     <!-- about -->
 
+    <!-- projects -->
+    <section class="projects" id="projects">
+        <div class="projects-left-block"> </div>
+        <div class="projects-right-block">
+            <h2 class="projects-right-block__title">Projects</h2>
+            <p class="projects-right-block__text"> Starting a Creative Firm in the Age of Digital Marketing.</p>
+            <div class="projects-right-block-content">
+                <div class="projects-right-block-content-section">
+                    <img class="projects-right-block-content-section__image" src="build/img/img1.png" alt="image">
+                    <p class="projects-right-block-content-section__title">Voice Control</p>
+                    <p class="projects-right-block-content-section__text">
+                        Intrinsicly formulate scalable web services before fully researched methodologies.
+                    </p>
+                </div>
+                <div class="projects-right-block-content-section">
+                    <img class="projects-right-block-content-section__image" src="build/img/img2.png" alt="image">
+                    <p class="projects-right-block-content-section__title">Music Player</p>
+                    <p class="projects-right-block-content-section__text">
+                        Intrinsicly formulate scalable web services before fully researched methodologies.
+                    </p>
+                </div>
+                <div class="projects-right-block-content-section">
+                    <img class="projects-right-block-content-section__image" src="build/img/img3.png" alt="image">
+                    <p class="projects-right-block-content-section__title">Water Resistant</p>
+                    <p class="projects-right-block-content-section__text">
+                        Intrinsicly formulate scalable web services before fully researched methodologies.
+                    </p>
+                </div>
+                <a class="projects-right-block-content__btn" href="#projects">view more</a>
+            </div>
+        </div>
+    </section>
+    <!-- /projects -->
 
+    <!-- prices -->
+    <section class="prices-wrapp" id="prices">
+        <h2 class="prices__title">Affordable Prices</h2>
+        <div class="prices">
+            <div class="prices-content wow fadeInUp">
+                <p class="prices-content__cost-first">59</p>
+                <p class="prices-content__title">Single License</p>
+                <ul class="prices-content__list">
+                    <li>1 theme included</li>
+                    <li>1 year of theme updates & support</li>
+                    <li>20% off future purchases</li>
+                </ul>
+                <a href="#prices" class="prices-content__btn">view</a>
+            </div>
+            <div class="prices-content wow fadeInUp delay-1s">
+                <p class="prices-content__cost">199</p>
+                <p class="prices-content__title">1 Year Membership</p>
+                <ul class="prices-content__list">
+                    <li>All themes included</li>
+                    <li>1 year of theme updates & support</li>
+                    <li>Access all new themes</li>
+                </ul>
+                <a href="#prices" class="prices-content__btn">Sign Up today</a>
+            </div>
+            <div class="prices-content wow fadeInUp delay-2s">
+                <p class="prices-content__cost">399</p>
+                <p class="prices-content__title">Forever Membership</p>
+                <ul class="prices-content__list">
+                    <li>All themes included</li>
+                    <li>Unlimited theme updates & Support</li>
+                    <li>Access all new themes</li>
+                </ul>
+                <a href="#prices" class="prices-content__btn">Sign Up today</a>
+            </div>
+        </div>
+    </section>
+    <!-- /prices -->
+
+    <!-- news -->
+    <section class="news" id="blog">
+        <h2 class="news__title">Latest News</h2>
+        <div class="news-content">
+            <a class="news-content-left" href="#blog" style="background-image: url(build/img/news1.jpg)">
+                <p class="news-content-left__topic">Wordpress</p>
+                <h3 class="news-content-left__title">Top 10 Most Popular Premium WordPress Themes of 2017</h3>
+                <p class="news-content-left__text"><span>may 17, 2017 by</span> nicola mihaita</p>
+            </a>
+            <div class="news-content-right">
+                <a class="news-content-right-box" href="#blog">
+                    <div class="news-content-right-box__image"
+                        style="background: url(build/img/news2.jpg) center no-repeat">
+                        <p class="news-content-right-box__topic">graphic design</p>
+                    </div>
+                    <p class="news-content-right-box__text">Add as many language packs as you want, to showcase your
+                        website
+                    </p>
+                </a>
+                <a class="news-content-right-box" href="#blog">
+                    <div class="news-content-right-box__image"
+                        style="background: url(build/img/news3.jpg) center no-repeat">
+                        <p class="news-content-right-box__topic">creative</p>
+                        <p class="news-content-right-box__second-topic">seo</p>
+                    </div>
+                    <p class="news-content-right-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do
+                    </p>
+                </a>
+                <a class="news-content-right-box" href="#blog">
+                    <div class="news-content-right-box__image"
+                        style="background: url(build/img/news4.jpg) center no-repeat">
+                        <p class="news-content-right-box__topic">apps</p>
+                    </div>
+                    <p class="news-content-right-box__text">Add as many language packs as you want, to showcase your
+                        website
+                    </p>
+                </a>
+                <a class="news-content-right-box" href="#blog">
+                    <div class="news-content-right-box__image"
+                        style="background: url(build/img/news5.jpg) center no-repeat">
+                        <p class="news-content-right-box__topic">seo</p>
+                    </div>
+                    <p class="news-content-right-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do
+                    </p>
+                </a>
+            </div>
+        </div>
+        <a href="#blog" class="news__btn">Read more</a>
+    </section>
+    <!-- /news -->
+
+    <!-- services -->
+    <!-- <section class="services" id="services">
+        <div class="services-wrapper">
+            <div class="services-left">
+                <h2 class="services-left__title">We’ve got you covered.</h2>
+                <p class="services-left__text">Intuitive drag and drop Page Builder. Stunning themes. <span>Over 100
+                        Elements.</span>
+                    Creating your beautiful website has never been easier.</p>
+            </div>
+            <div class="services-right-wrapp">
+                <div class="services-description-left">
+                    <div class="services-description">
+                        <img src="build/img/serv1.png" alt="image" class="services-description__image">
+                        <h3 class="services-description__title">Stunning Page Builder</h3>
+                        <p class="services-description__text">Setup pages and content like a PRO. Coding is not
+                            required
+                            and a handy documentation is included.</p>
+                    </div>
+                    <div class="services-description">
+                        <img src="build/img/serv2.png" alt="image" class="services-description__image">
+                        <h3 class="services-description__title">Featurewise Complete</h3>
+                        <p class="services-description__text">Without a doubt, Kallyas is one of the most complete
+                            WordPress themes on the market, being packed with all the goodies and sweet gems.</p>
+                    </div>
+                    <div class="services-description">
+                        <img src="build/img/serv3.png" alt="image" class="services-description__image">
+                        <h3 class="services-description__title">Rescue support</h3>
+                        <p class="services-description__text">
+                            In time, gathering awesome feedback from our loyal customers, Kallyas became a mature,
+                            stable
+                            and future-proof project.</p>
+                    </div>
+                </div>
+                <div class="services-description-right">
+                    <div class="services-description">
+                        <img src="build/img/serv4.png" alt="image" class="services-description__image">
+                        <h3 class="services-description__title">Iconic Awarded Design</h3>
+                        <p class="services-description__text">This design is featured across the
+                            marketplaces and awarded for it's looks. Walkthrough and enjoy the visuals.</p>
+                    </div>
+                    <div class="services-description">
+                        <img src="build/img/serv5.png" alt="image" class="services-description__image">
+                        <h3 class="services-description__title">Mature project</h3>
+                        <p class="services-description__text">In time, gathering awesome feedback from our loyal
+                            customers,
+                            Kallyas became a mature, stable and future-proof project.</p>
+                    </div>
+                    <div class="services-description">
+                        <img src="build/img/serv6.png" alt="image" class="services-description__image">
+                        <h3 class="services-description__title">E-Commerce Ready</h3>
+                        <p class="services-description__text">
+                            In time, gathering awesome feedback from our loyal customers, Kallyas became a mature,
+                            stable
+                            and future-proof project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- /services -->
+
+    <!-- facts -->
+    <!-- <section class="facts">
+        <div class="facts-content">
+            <h2 class="facts-content__title">Facts</h2>
+            <div class="counter">
+                <div class="counter-box">
+                    <div class="counter-box__number-wrapper">
+                        <p class="counter-box__numbers">130</p>
+                        <p class="counter-box__numbers-descr">+</p>
+
+                    </div>
+                    <p class="counter-box__text-description">Customers</p>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-box__number-wrapper">
+                        <p class="counter-box__numbers">200</p>
+                        <p class="counter-box__numbers-descr">+</p>
+
+                    </div>
+                    <p class="counter-box__text-description">Apps developed</p>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-box__number-wrapper">
+                        <p class="counter-box__numbers">10</p>
+                        <p class="counter-box__numbers-descr">+</p>
+
+                    </div>
+                    <p class="counter-box__text-description">Offices</p>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-box__number-wrapper">
+                        <p class="counter-box__numbers">2</p>
+                        <p class="counter-box__numbers-descr">K+</p>
+
+                    </div>
+                    <p class="counter-box__text-description">Coffes</p>
+                </div>
+            </div>
+            <p class="facts-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+    </section> -->
+    <!-- /facts -->
+
+    <!-- companies -->
+    <!-- <section class="companies">
+        <div class="companies-slider">
+            <div class="companies-inner">
+                <div class="companies-slider__content">
+                    <h2 class="companies-inner__title">Working with world's best companies.</h2>
+                    <ul class="companies-inner__image-companies">
+                        <li> <img src="build/img/company1.png" alt="company"> </li>
+                        <li> <img src="build/img/company2.png" alt="company"> </li>
+                        <li> <img src="build/img/company3.png" alt="company"> </li>
+                        <li> <img src="build/img/company4.png" alt="company"> </li>
+                        <li> <img src="build/img/company5.png" alt="company"> </li>
+                    </ul>
+                    <p class="companies-inner__text-description">“Bought this theme sometime ago and is so pleased
+                        with the
+                        flexibility of
+                        the theme... You guys deserve a five star wich you got from me.”</p>
+                    <p class="companies-inner__text-name">PERRY ANDREWS</p>
+                    <p class="companies-inner__text-swift">SWIFT Inc.</p>
+                </div>
+            </div>
+            <div class="companies-inner">
+                <div class="companies-slider__content">
+                    <h2 class="companies-inner__title">Working with world's best companies.</h2>
+                    <ul class="companies-inner__image-companies">
+                        <li> <img src="build/img/company1.png" alt="company"> </li>
+                        <li> <img src="build/img/company2.png" alt="company"> </li>
+                        <li> <img src="build/img/company3.png" alt="company"> </li>
+                        <li> <img src="build/img/company4.png" alt="company"> </li>
+                        <li> <img src="build/img/company5.png" alt="company"> </li>
+                    </ul>
+                    <p class="companies-inner__text-description">“Bought this theme sometime ago and is so pleased
+                        with the
+                        flexibility of
+                        the theme... You guys deserve a five star wich you got from me.”</p>
+                    <p class="companies-inner__text-name">PERRY ANDREWS</p>
+                    <p class="companies-inner__text-swift">SWIFT Inc.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- /companies -->
+
+    <!-- get-in-touch -->
+    <!-- <section class="communication" id="join">
+        <div class="communication-content">
+            <h2 class="communication-content__title">Get in Touch With Us.</h2>
+            <p class="communication-content__text">Marketing to mobile-first users has arrived and must be taken
+                seriously.</p>
+            <a href="#join" class="communication-content__btn">Let’s do it</a>
+        </div>
+    </section> -->
+    <!-- /get-in-touch -->
+
+    <!-- <footer> -->
+    <!-- <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-content-left">
+                <h3 class="footer-content-left__title">hogash studios</h3>
+                <p class="footer-content-left__text">Text of the printing and typesetting industry. Lorem Ipsum has
+                    been the indus try's standard dummy text ever when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.</p>
+                <ul class="footer-content-left__list">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=ru" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-content-right">
+                <div class="footer-content-right__col">
+                    <h3 class="footer-content-right__col-title">Services</h3>
+                    <ul class="footer-content-right__col-list">
+                        <li><a href="#contact">Web Design</a></li>
+                        <li><a href="#contact">Development</a></li>
+                        <li><a href="#contact">Graphic Design</a></li>
+                        <li><a href="#contact">Illustration</a></li>
+                        <li><a href="#contact">Branding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content-right__col">
+                    <h3 class="footer-content-right__col-title">Company</h3>
+                    <ul class="footer-content-right__col-list">
+                        <li><a href="#contact">About Us</a></li>
+                        <li><a href="#contact">Knowledgae base</a></li>
+                        <li><a href="#contact">Story</a></li>
+                        <li><a href="#contact">Terms</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content-right__coll">
+                    <h3 class="footer-content-right__col-title">Links</h3>
+                    <ul class="footer-content-right__col-list">
+                        <li><a href="#contact">Company</a></li>
+                        <li><a href="#contact">Services</a></li>
+                        <li><a href="#contact">Products</a></li>
+                        <li><a href="#contact">Blog</a></li>
+                        <li><a href="#contact">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <p class="footer__text">Made with Love by <a href="https://hogash.com/" target="_blank">hogash.com</a></p>
+        </div>
+    </footer> -->
+    <!-- </footer> -->
+
+    <button class="btn-top" title="Go to top"><i class="wow fadeInUp infinite fas fa-angle-up"></i></button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="build/js/jquery.fancybox.min.js"></script>
+    <script src="build/js/jquery.spincrement.min.js"></script>
     <script src="build/js/wow.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/20cc153e5b.js" crossorigin="anonymous"></script>
     <script src="build/js/script.js"></script>
     <script>
