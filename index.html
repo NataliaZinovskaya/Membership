@@ -21,6 +21,29 @@
     <header class="header">
         <img src="build/img/logo.png" alt="logo" class="header__logo">
 
+        <div class="hidden-menu-wrapper">
+            <input type="checkbox" id="hmt" class="hidden-menu-list-ticker">
+            <label class="hidden-menu-button" for="hmt">
+                <span class="hidden-menu-first-line"></span>
+                <span class="hidden-menu-second-line"></span>
+                <span class="hidden-menu-third-line"></span>
+            </label>
+            <ul class="hidden-menu-list">
+                <li class="hidden-menu-link">
+                    <a class="header__nav-list-content-link" href="#">About <i class="fas fa-angle-down"></i></a>
+                    <ul class="header__nav-list-dropdown">
+                        <li class="hidden-menu-link"><a href="#offers">Offers</a></li>
+                        <li class="hidden-menu-link"><a href="#about">About Us</a></li>
+                        <li class="hidden-menu-link"><a href="#projects">Projects</a></li>
+                        <li class="hidden-menu-link"><a href="#prices">Prices</a></li>
+                    </ul>
+                </li>
+                <li><a class="hidden-menu-link" href="#services">Services</a> </li>
+                <li><a class="hidden-menu-link" href="#blog">Blog</a> </li>
+                <li><a class="hidden-menu-link" href="#contact">Contact</a> </li>
+            </ul>
+        </div>
+
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-list-content">
@@ -264,7 +287,7 @@
     <!-- /news -->
 
     <!-- services -->
-    <!-- <section class="services" id="services">
+    <section class="services" id="services">
         <div class="services-wrapper">
             <div class="services-left">
                 <h2 class="services-left__title">We’ve got you covered.</h2>
@@ -321,11 +344,11 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- /services -->
 
     <!-- facts -->
-    <!-- <section class="facts">
+    <section class="facts">
         <div class="facts-content">
             <h2 class="facts-content__title">Facts</h2>
             <div class="counter">
@@ -366,11 +389,11 @@
                 tempor
                 incididunt ut labore et dolore magna aliqua. </p>
         </div>
-    </section> -->
+    </section>
     <!-- /facts -->
 
     <!-- companies -->
-    <!-- <section class="companies">
+    <section class="companies">
         <div class="companies-slider">
             <div class="companies-inner">
                 <div class="companies-slider__content">
@@ -409,22 +432,22 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- /companies -->
 
     <!-- get-in-touch -->
-    <!-- <section class="communication" id="join">
+    <section class="communication" id="join">
         <div class="communication-content">
             <h2 class="communication-content__title">Get in Touch With Us.</h2>
             <p class="communication-content__text">Marketing to mobile-first users has arrived and must be taken
                 seriously.</p>
             <a href="#join" class="communication-content__btn">Let’s do it</a>
         </div>
-    </section> -->
+    </section>
     <!-- /get-in-touch -->
 
     <!-- <footer> -->
-    <!-- <footer class="footer" id="contact">
+    <footer class="footer" id="contact">
         <div class="footer-content">
             <div class="footer-content-left">
                 <h3 class="footer-content-left__title">hogash studios</h3>
@@ -474,10 +497,11 @@
         <div class="footer-wrapper">
             <p class="footer__text">Made with Love by <a href="https://hogash.com/" target="_blank">hogash.com</a></p>
         </div>
-    </footer> -->
+    </footer>
     <!-- </footer> -->
 
     <button class="btn-top" title="Go to top"><i class="wow fadeInUp infinite fas fa-angle-up"></i></button>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="build/js/jquery.fancybox.min.js"></script>

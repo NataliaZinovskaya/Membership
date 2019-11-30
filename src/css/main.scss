@@ -4,6 +4,87 @@
 
 @import "variables.scss";
 
+
+// ==== adaptive menu ====
+
+.hidden-menu-wrapper {
+    display: none;
+}
+
+.hidden-menu-list {
+    display: block;
+    position: fixed;
+    padding: 50px 0px 24px 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #a09d9d;
+    transition: left 0.9s;
+    left: -100vh;
+    z-index: 10;
+}
+
+.hidden-menu-link {
+    font-family: Ubuntu;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: #d2caca;
+    text-decoration: none;
+    line-height: 1.7em;
+    transition: left 0.5s;
+}
+
+.hidden-menu-list-ticker {
+    display: none;
+}
+
+.hidden-menu-button {
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: left .3s;
+    z-index: 11;
+    width: 35px;
+}
+
+.hidden-menu-button span {
+    display: block;
+    height: 5px;
+    background-color: #a17f23;
+    margin: 5px 0 0;
+    position: relative;
+}
+
+.hidden-menu-list-ticker:checked~.hidden-menu-button {
+    right: 270px;
+}
+
+.hidden-menu-list-ticker:checked~.hidden-menu-list {
+    left: 0;
+}
+
+.hidden-menu-list-ticker:checked~.hidden-menu-button .hidden-menu-first-line {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.hidden-menu-list-ticker:checked~.hidden-menu-button .hidden-menu-second-line {
+    opacity: 0;
+}
+
+.hidden-menu-list-ticker:checked~.hidden-menu-button .hidden-menu-third-line {
+    transform: rotate(-45deg);
+    top: -10px;
+}
+
+// ==== /adaptive menu ====
+
+// ==== /adaptive menu ====
+
+
 // ==== header ====
 
 .header {
@@ -96,7 +177,7 @@
     @include flex(flex, column, center, center);
 
     &__title {
-        @include text(Ubuntu, 44px, #333333, none, 300);
+        @include text(Ubuntu, 44px, #333333, 1.5em, 300);
     }
 
     &__start-button {
@@ -729,7 +810,7 @@
 // ==== companies ====
 
 .companies {
-    widows: 100%;
+    width: 100%;
     min-height: 625px;
 }
 
@@ -953,6 +1034,7 @@
     padding: 15px 20px;
     border-radius: 10%;
     transition: .5s;
+    opacity: .5;
 
     &:hover {
         background-color: #5777a2;

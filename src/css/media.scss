@@ -60,6 +60,23 @@
     .prices-content {
         padding-bottom: 70px;
     }
+
+    .footer-content {
+        padding-top: 90px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content-left {
+        width: auto;
+        margin: 0 0 25px 20px;
+    }
+
+    .footer-content-right {
+        padding-left: 20px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -94,6 +111,57 @@
         margin-bottom: 25px;
     }
 
+    .services-wrapper {
+        padding-top: 65px;
+        padding-bottom: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-left__text {
+        padding-bottom: 35px;
+    }
+
+    .services-left {
+        width: 90%;
+        text-align: center;
+    }
+
+    .facts-content__title {
+        padding-top: 80px;
+        padding-bottom: 55px;
+    }
+
+    .facts {
+        min-height: 525px;
+    }
+
+    .companies-inner {
+        padding: 65px 20px;
+    }
+
+    .companies {
+        min-height: 570px;
+    }
+
+    .btn-next {
+        right: 45%;
+    }
+
+    .btn-prev {
+        left: 45%;
+    }
+
+    .communication-content__text {
+        padding: 20px 10px;
+    }
+
+    .footer-content-left,
+    .footer-content-right,
+    .footer__text {
+        margin-left: 50px;
+    }
+
 }
 
 @media (max-width: 840px) {
@@ -104,6 +172,32 @@
 }
 
 @media (max-width: 760px) {
+
+    .hidden-menu-wrapper {
+        display: block;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav-list-content-link {
+        color: #d2caca;
+
+        &:hover {
+            color: #d2caca;
+        }
+    }
+
+    .hidden-menu-link {
+        a {
+            color: #fff;
+        }
+    }
+
+    .header-content__title {
+        padding-top: 400px;
+    }
 
     .projects {
         flex-direction: column;
@@ -133,6 +227,15 @@
     .prices-content__list {
         width: 70%;
         margin: 0 auto;
+    }
+
+    .counter {
+        padding: 0 35px;
+    }
+
+    .facts-content__text {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -196,6 +299,86 @@
         width: 205px;
         margin: 0 auto;
     }
+
+    .services-right-wrapp {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .services-description-left,
+    .services-description-right {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .services-wrapper {
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+
+    .counter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter-box {
+        width: 80%;
+    }
+
+    .counter-box__text-description {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .facts-content__title {
+        padding-top: 60px;
+        padding-bottom: 35px;
+    }
+
+    .facts-content__text {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .companies-inner__image-companies {
+        padding-bottom: 65px;
+    }
+
+    .footer-content-left__text {
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-content-left__title {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-content-left__list {
+        justify-content: center;
+    }
+
+    .footer-content-right {
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .footer__text {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footer-content {
+        padding-top: 50px;
+    }
+
+    .footer-wrapper {
+        padding: 30px 0 50px 20px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -207,9 +390,26 @@
     .news-content {
         margin: 0 30px;
     }
+
+    .companies-inner__image-companies {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slick-slide img {
+        padding: 10px;
+    }
+
+    .companies-inner__text-swift {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 460px) {
+
+    .header-content__title {
+        padding-top: 170px;
+    }
 
     .news {
         min-height: 1660px;
@@ -217,6 +417,10 @@
 
     .news-content-right {
         justify-content: center;
+    }
+
+    .footer-content-left {
+        margin-left: 0;
     }
 }
 
@@ -237,6 +441,14 @@
     .news-content-left__title {
         font-size: 20px;
     }
+
+    .btn-next {
+        right: 42%;
+    }
+
+    .btn-prev {
+        left: 42%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -256,7 +468,7 @@
 
     .header__logo {
         left: 20px;
-        top: 15px;
+        top: 55px;
     }
 
     .prices__title {
